@@ -1,0 +1,9 @@
+# Cache and logs
+__pycache__
+.cache/
+
+# External package
+safe_rlhf/
+
+# Model checkpoints
+model/

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Dynamic Attribute Graphs-based controlled text generation (DATG) for Large Language Models (LLMs), enhancing control accuracy and text fluency across multiple datasets.">
+  <meta property="og:title" content="Dynamic Attribute Graphs-based Controlled Text Generation"/>
+  <meta property="og:description" content="Explore the DATG framework that enhances controlled text generation in LLMs, achieving significant improvements in control accuracy and text fluency. Read more!"/>
+  <meta property="og:url" content="https://arxiv.org/abs/2402.11218"/>
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+  
+  <meta name="twitter:title" content="Explore DATG: A New Framework for Controlled Text Generation in LLMs">
+  <meta name="twitter:description" content="The DATG framework utilizes dynamic attribute graphs to significantly enhance control accuracy and text fluency in text generation tasks. Discover more!">
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image"> -->
+  <meta name="keywords" content="Controlled Text Generation, Large Language Models, Text Fluency, Attribute Control, DATG, Text Generation Framework">
+  
+
+
+  <title>Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs</title>
+  <link rel="icon" type="image/png" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero is-small section-background">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Dynamic Attribute Graphs-based Controlled Text Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="mailto:xliang@ruc.edu.cn" target="_blank">Xun Liang<sup>1*</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:hy.wang@ruc.edu.cn" target="_blank">Hanyu Wang<sup>1*</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:songshichao@ruc.edu.cn" target="_blank">Shichao Song<sup>1*</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:mthu@mail.nankai.edu.cn" target="_blank">Mengting Hu<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:xunzhi@mail.nankai.edu.cn" target="_blank">Xunzhi Wang<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:lizy@iaar.ac.cn" target="_blank">Zhiyu Li<sup>3†</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:xiongfy@iaar.ac.cn" target="_blank">Feiyu Xiong<sup>3</sup></a>,</span>
+              <span class="author-block">
+                <a href="mailto:tangb@iaar.ac.cn" target="_blank">Bo Tang<sup>3</sup></a>
+              </span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">ACL'24 Findings</span><br>
+              <span class="author-block">1 Renmin University of China</span><br>
+              <span class="author-block">2 Nankai University</span><br>
+              <span class="author-block">3 Institute for Advanced Algorithms Research (Shanghai)</span><br>
+              <span class="eql-cntrb"><small><sup>*</sup>Indicates Equal Contribution<br><sup>†</sup>Corresponding Author</small></span>
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2402.11218.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
+  
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/IAAR-Shanghai/DATG" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+  
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2402.11218" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Controlled Text Generation (CTG) aims to produce texts that exhibit specific desired attributes. In this study, we introduce a pluggable CTG framework for Large Language Models (LLMs) named <strong>D</strong>ynamic <strong>At</strong>tribute <strong>G</strong>raphs-based controlled text generation <strong>(DATG)</strong>. This framework utilizes an attribute scorer to evaluate the attributes of sentences generated by LLMs and constructs dynamic attribute graphs. DATG modulates the occurrence of key attribute words and key anti-attribute words, achieving effective attribute control without compromising the original capabilities of the model. We conduct experiments across four datasets in two tasks: toxicity mitigation and sentiment transformation, employing five LLMs as foundational models. Our findings highlight a remarkable enhancement in control accuracy, achieving a peak improvement of 19.29% over baseline methods in the most favorable task across four datasets. Additionally, we observe a significant decrease in perplexity, markedly improving text fluency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered">
+              <div class="container">
+                  <h2 class="title is-3 has-text-centered">Introduction to Controlled Text Generation</h2>
+                  <p>
+                      Controlled Text Generation (CTG) focuses on generating text that adheres to specific attributes like sentiment and non-toxicity, maintaining both the quality and generative power of Large Language Models (LLMs). Traditionally, smaller language models have been used to guide the decoding of larger models, offering control but often at the cost of reducing output quality and variability.
+                  </p>
+                  <br>
+                  <p>
+                      Recent research highlights a key dilemma: excessive control can undermine text fluency, turning advanced LLMs into mere "puppets" of smaller models. This excessive reliance compromises LLMs' inherent decoding capabilities, relegating these powerful models to subordinate roles.
+                  </p>
+                  <br>
+                  <p>
+                      This introduction underscores the need for a balanced approach to integrating control within LLMs, ensuring that enhancements in text generation do not sacrifice the models' intrinsic strengths.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Semantic Influence of Key Words</h2>
+          <p>
+            In light of our exploration, we believe that the specific attributes of a text are predominantly determined by a limited number of words that bear a close relation to those attributes. Although these key words are sparse within the text, their impact on the overall attributes is decisive (See Figure 1).
+          </p>
+          <br>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-half">
+              <div class="item centered-item">
+                <img class="resize-image" src="static/images/keyword.png" alt="Example of keywords' Influence" />
+                <h2 class="subtitle">
+                  Figure 1: Example demonstrating the influence of key words on text attributes.
+                </h2>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="item centered-item">
+                <img class="resize-image" src="static/images/semantic_space.png" alt="Illustration of Semantic Space Influence" />
+                <h2 class="subtitle">
+                  Figure 2: Illustration of the impact of key words on text attributes within the semantic space.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <p>
+            For instance in Figure 2, changing the word "masterpiece" to "failure" in the sentence "The novel is a masterpiece of storytelling, with a complex narrative." shifts the sentiment from positive to negative. This change not only alters the entire sentence's sentiment but also its meaning. In the conceptual framework of semantic space, these attributes can be seen as dimensions within this space. By strategically adjusting these key words, we can guide the text generated by Large Language Models (LLMs) to move in the desired direction within the semantic space, controlling its attributes without significant alterations to the overall content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3 has-text-centered">Our Approach: Dynamic Attribute Graphs-Based Controlled Text Generation (DATG)</h2>
+          <p>
+            Building on our insights into controlled text generation, we introduce the <strong>Dynamic Attribute Graphs-based Controlled Text Generation (DATG)</strong> method. This refined approach leverages dynamic attribute graphs to identify and modulate a subset of key attribute words, allowing for targeted adjustments that enhance the precision of attribute control in generated text.
+          </p>
+          <br>
+          <div class="item centered-item">
+            <img src="static/images/framework.png" alt="Framework of DATG Method" />
+            <h2 class="subtitle">
+              Figure 3: Framework of DATG Method.
+            </h2>
+          </div>
+          <br>
+          <p>
+            DATG begins with <strong>Contextual Corpus Construction</strong>, where large language models (LLMs) generate text sequences from specifically designed prompts to capture the desired attributes. The texts are then assessed through <strong>Attribute Classifier Scoring</strong>, employing classifiers like toxicity or sentiment models to evaluate their alignment with the target attributes.
+          </p>
+          <br>
+          <p>
+            At the heart of DATG is the <strong>Dynamic Attribute Graphs Construction</strong> step, which transforms these text sequences into directed weighted graphs based on classifier scores. This involves creating positive and negative attribute graphs, which represent the adherence to and deviation from the desired attributes. These graphs guide the subsequent text generation to ensure that it remains within the desired semantic dimensions.
+          </p>
+          <br>
+          <p>
+            The process concludes with <strong>ReGeneration with Dynamic Boundary Controlling</strong>. Here, a graph ranking algorithm selects key nodes, which are critical for pushing the generated text towards the control attributes' upper boundaries in the semantic space. Adjustments to these key nodes, facilitated by logits-boost and prefix-prompt strategies, refine the text generation process, ensuring that it adheres closely to the desired attributes while maintaining semantic integrity and coherence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results for Experiment</h2>
+      <!-- Images aligned side by side for results -->
+      <div style="display: flex; justify-content: space-around; align-items: center;">
+        <img src="static/images/toxic_result.png" alt="Toxicity Results" style="width: 48%;"/>
+        <img src="static/images/sentiment_result.png" alt="Sentiment Results" style="width: 48%;"/>
+      </div>
+      <!-- Central image for statistics results -->
+      <div style="text-align: center; margin-top: 20px;">
+        <img src="static/images/stats_results.png" alt="Statistics Results" style="width: 80%;"/>
+      </div>
+      <!-- List of results and observations -->
+      <ul class="content">
+        <li>
+          <strong>Effectiveness and Fluency:</strong> The DATG approach ranks highly in both toxicity mitigation and sentiment transformation tasks, effectively reducing unwanted attributes while maintaining text fluency. This demonstrates the method's ability to produce high-quality, coherent text across different contexts and requirements.
+        </li>
+        <li>
+          <strong>Attribute Control Validation:</strong> The success across various datasets confirms our hypothesis that adjusting a few key attribute words can effectively control the text's overall sentiment or toxicity. This strategic modification ensures that the changes in attributes do not compromise the natural flow and coherence of the generated text.
+        </li>
+        <li>
+          <strong>Consistency Across Models:</strong> The DATG method shows consistent performance in reducing toxicity and transforming sentiment across different LLMs and datasets. This stability underscores the robustness of our approach, highlighting its adaptability to different LLMs without losing quality.
+        </li>
+        <!-- Images for speed comparison -->
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+          <img src="static/images/toxicity_speed.png" alt="Toxicity Speed Comparison" style="width: 48%;"/>
+          <img src="static/images/sentiment_speed.png" alt="Sentiment Speed Comparison" style="width: 48%;"/>
+        </div>
+        <li>
+          <strong>Speed Advantage:</strong> DATG exhibits faster generation speeds compared to PREADD and FUDGE, emphasizing the efficiency of our approach even when integrating complex attribute control mechanisms.
+        </li>
+        <br>
+        <div style="text-align: center; margin-top: 20px;">
+          <img src="static/images/speed_stage.png" alt="Computation Times for Each Stage of DATG" style="width: 80%;">
+          <p class="subtitle">Figure 4: Detailed computation times for each stage of the DATG process.</p>
+        </div>
+        <br>
+        <li>
+          <strong>Potential for Speed Improvement:</strong> Figure 4 illustrates the average computation times for each stage of the DATG process, using Alpaca-7B as a case study. Notably, the stages of Contextual Corpus Construction and Dynamic Attribute Graphs Construction are highlighted as primary areas for achieving significant time reductions. By pre-generating extensive attribute graphs, we can allow for quicker identification and integration of relevant sub-graphs and nodes during the generation process. This pre-construction strategy significantly reduces the computational load during these stages, thereby enhancing the overall speed of generation and enabling faster response times in practice.
+        </li>        
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Article</h2>
+
+      <iframe  src="static/pdfs/DATG.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{DATG,
+        title={Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs},
+        author={Xun Liang and Hanyu Wang and Shichao Song and Mengting Hu and Xunzhi Wang and Zhiyu Li and Feiyu Xiong and Bo Tang},
+        journal={arXiv preprint arXiv:2402.11218},
+        year={2024},
+    }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

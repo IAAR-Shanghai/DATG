@@ -124,10 +124,17 @@ DATG (Dynamic Attribute Graphs-based Text Generation) is an innovative approach 
 ## Citation
 
 ```BibTeX
-@article{DATG,
-    title={Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs},
-    author={Xun Liang and Hanyu Wang and Shichao Song and Mengting Hu and Xunzhi Wang and Zhiyu Li and Feiyu Xiong and Bo Tang},
-    journal={arXiv preprint arXiv:2402.11218},
-    year={2024},
+@inproceedings{liang-etal-2024-controlled,
+    title = "Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs",
+    author = "Liang, Xun and Wang, Hanyu and Song, Shichao and Hu, Mengting and Wang, Xunzhi and Li, Zhiyu and Xiong, Feiyu and Tang, Bo",
+    editor = "Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.345",
+    doi = "10.18653/v1/2024.findings-acl.345",
+    pages = "5797--5814",
 }
 ```
